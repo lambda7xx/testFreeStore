@@ -1,4 +1,4 @@
-WORKER_IP ="127.0.0.1"#workflow机器的ip 
+WORKER_IP ="172.16.187.13"#workflow机器的ip 
 
 key1 = "key1"
 value1 = "1" * 10000
@@ -17,8 +17,8 @@ values  = []
 value = "1".encode() #转为bytes 
 
 maxSize = 100000
-for i in range(1000):
+for i in range(20):
     tkey = key + str(i)
     tvalue = value *  maxSize
     keys.append(tkey)
-    values.append(tvalue).
+    values.append(tvalue)
